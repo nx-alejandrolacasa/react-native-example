@@ -1,0 +1,63 @@
+{
+  "name": "react-native-example",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "run:android": "react-native-scripts android",
+    "run:ios": "react-native-scripts ios",
+    "lint": "eslint src",
+    "test": "yarn lint && yarn flow && jest",
+    "test:unit": "jest",
+    "precommit": "lint-staged && yarn test",
+    "flow": "flow",
+    "flow-stop": "flow stop"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "testMatch": [
+      "**/?(*.)test.js?(x)"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "<rootDir>/test/setup.js"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "expo": "^25.0.0",
+    "react": "16.2.0",
+    "react-dom": "^16.2.0",
+    "react-native": "0.52.0",
+    "react-navigation": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-preset-flow": "^6.23.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.44.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "flow-bin": "0.66.0",
+    "flow-typed": "^2.3.0",
+    "husky": "^0.14.3",
+    "jest-expo": "25.0.0",
+    "lint-staged": "^6.1.1",
+    "prettier": "^1.10.2",
+    "react-native-scripts": "1.11.1",
+    "react-test-renderer": "16.2.0"
+  }
+}
