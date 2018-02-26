@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationScreenProp, NavigationState } from 'react-navigation';
 import { Button } from 'react-native';
-import Face from './Face/Face';
+import Face from '../Face/Face';
 
 import travoltaSrc from './travolta.jpg';
 

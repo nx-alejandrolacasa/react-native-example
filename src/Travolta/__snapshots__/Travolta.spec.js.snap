@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Travolta component should render without crashing 1`] = `
+<Face
+  button={
+    <Button
+      onPress={[Function]}
+      title="Go back to Cage"
+    />
+  }
+  faceSrc={
+    Object {
+      "testUri": "../../../src/Travolta/travolta.jpg",
+    }
+  }
+/>
+`;

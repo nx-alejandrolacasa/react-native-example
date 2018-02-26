@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StackNavigator } from 'react-navigation';
-import Cage from './src/Cage';
-import Travolta from './src/Travolta';
+import Cage from './src/Cage/Cage';
+import Travolta from './src/Travolta/Travolta';
 
 const RootStack = StackNavigator(
   {
