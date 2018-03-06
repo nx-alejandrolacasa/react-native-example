@@ -36,10 +36,7 @@ class FadeIn extends React.Component<Props, State> {
         style={[
           this.props.style,
           {
-            transform: [
-              { scaleX: this.state.fadeInAnim },
-              { scaleY: this.state.fadeInAnim },
-            ],
+            opacity: this.state.fadeInAnim,
           },
         ]}
       >

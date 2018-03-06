@@ -11,10 +11,13 @@ type Props = {
 
 const Travolta = ({ navigation }: Props) => (
   <Face
-    faceSrc={travoltaSrc}
     button={
-      <Button title="Go back to Cage" onPress={() => navigation.goBack()} />
+      <Button
+        title="Go back to Cage"
+        onPress={() => navigation.goBack()}
+      />
     }
+    faceSrc={travoltaSrc}
   />
 );
 
